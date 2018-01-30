@@ -1,0 +1,1065 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    Project Name
+Version:    1.0
+Last change:    24/03/17 [fixed Float bug, vf]
+Author Name: Author Name
+Primary use:    Project Type
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+2.
+-------------------------------------------------------------------*/
+
+
+
+/*
+==========================================
+    font-family: 'Montserrat', sans-serif;
+==========================================
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+/*
+==========================================
+    font-family: 'Raleway', sans-serif;
+==========================================
+*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600i,700');
+
+/*
+==========================================
+    Reset Css
+==========================================
+*/
+
+html ,
+body{
+	height: 100%;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+
+.section-padding {
+    padding-top: 80px;
+	padding-bottom: 80px;
+}
+.section-margin{
+	margin-top: 80px;
+}
+
+
+
+/*
+==========================================
+    header main-meny Css
+==========================================
+*/
+
+
+.header .navbar{
+	padding: 0;
+}
+.header nav.main-menu ul{
+	margin-left: auto;
+}
+
+.header .navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border-color: rgba(0,0,0,.1);
+    background-color: #000;
+    color: #fff;
+    font-size: 30px;
+}
+
+.header {
+	position: absolute;
+	z-index:  1;
+	width: 100%;
+}
+
+.header:after {
+    position:  absolute;
+    content: "";
+    width:  100%;
+    height:  100%;
+    left:  0;
+    top:  0;
+    background-color:  black;
+    opacity:  .49;
+    z-index: -1;
+}
+
+
+nav.main-menu ul {
+    float:  right;
+}
+
+nav.main-menu ul li {
+    float:  left;
+    margin-left:  26px;
+}
+
+nav.main-menu ul li a {
+    color:  #fff;
+    text-decoration:  none;
+    text-transform:  uppercase;
+    padding: 40px 0;
+    transition: .3s;
+    display:  inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-weight:  500;
+}
+
+
+
+nav.main-menu ul li a:hover {
+	color: #fe320a;
+}
+
+.logo img {
+    margin-top: 16px;
+}
+
+
+
+
+/*
+==========================================
+    header img Css
+==========================================
+*/
+
+.header-img{
+	background: url(../img/header.jpg);
+	height:100%;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	position: relative;
+	z-index: 0;
+	background-attachment: fixed;
+}
+.header-img:after{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: #252525;
+	opacity: .42;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.header-img .container ,
+.header-img .row ,
+.header-img .col-md-12{
+	height: 100%;
+}
+
+
+.d-table{
+	display: table;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+.d-table-cell{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+.header-content {
+    color: #fff;
+    margin-top: 125px;
+}
+.header-content h1 {
+    font-family: 'Montserrat', sans-serif;
+	
+}
+
+.header-content {
+    color:  #fff;
+}
+
+.header-content h1 {
+    font-family:   'Montserrat', sans-serif;
+    font-size:  60px;
+    font-weight: 500;
+}
+
+
+
+.header-content p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 26px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.header-content span {
+	color:  #fe320a;
+	font-weight:  700;
+}
+
+.header-content a {
+    text-decoration:  none;
+    color:  #fff;
+    background-color:  #fe320a;
+    padding: 10px 30px;
+    display: inline-block;
+    font-size:  24px;
+    font-family: 'Raleway', sans-serif;
+	transition: .3s;
+	margin-top: 25px;
+}
+
+.header-content a:hover {
+	color:  #fe320a;
+	background-color:  #fff;
+}
+
+
+
+
+/*
+==========================================
+    about header Css
+==========================================
+*/
+
+.content-top-space{
+	margin-top: 70px;
+}
+
+.section-header h2 {
+    font-size:  30px;
+    text-transform:  uppercase;
+    font-weight:  600;
+    font-family:   'Montserrat', sans-serif;
+}
+
+.section-header span {
+	color: #ff0000;
+}
+
+.section-header h2:after {
+    position:  absolute;
+    content: "";
+    width: 156px;
+    height: 1px;
+    background-color: #ff0000;
+    top: 100%;
+    /* bottom: 0; */
+    left: 50%;
+    margin-left:  -78px;
+    margin-top: 8px;
+}
+
+.section-header h2:before {
+    position:  absolute;
+    content:  "";
+    width:  16px;
+    height:  16px;
+    background-color: #ff0000;
+    border-radius:  60px;
+    top:  100%;
+    left:  50%;
+    margin-left:  -8px;
+}
+
+
+
+/*
+==========================================
+    nandine about left Css
+==========================================
+*/
+.about-left {
+    position: relative;
+    text-align:  center;
+    color: #fff;
+    overflow:  hidden;
+}
+.about-left img {
+    width:  100%;
+    height:  auto;
+    transition: .3s;
+}
+
+.about-left:hover img{
+	transform: scale(1.1) rotate(5deg);
+}
+
+
+
+.about-left .about-left-datiles {
+    position:  absolute;
+    bottom:  0;
+    width:  100%;
+    text-align:  center;
+    z-index:  1;
+}
+
+.about-left .about-left-datiles:after {
+    position:  absolute;
+    content:  "";
+    background-color: #252525;
+    width:  100%;
+    height: 100%;
+    opacity: .69;
+    top:  0;
+    left:  0;
+    z-index:  -1;
+}
+
+.about-left-datiles {
+    padding: 12px 0;
+}
+
+.about-left-datiles h4 {
+    text-transform:  uppercase;
+    font-family:  'Raleway', sans-serif;
+    font-weight:  600;
+}
+
+.about-left-datiles ul
+ li {
+    display:  inline;
+}
+
+.about-left-datiles ul li a {
+    display:  inline-block;
+    font-size:  18px;
+    background-color: #252525;
+    width: 35px;
+    height: 35px;
+    margin: 3px;
+    border-radius:  50px;
+    padding: 5px;
+    color: #fff;
+}
+.about-left-datiles ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+
+
+/*
+==========================================
+    nandine about right Css
+==========================================
+*/
+
+
+.about-right h3 {
+    font-size:  26px;
+    font-weight:  600;
+    font-family:  'Raleway', sans-serif;
+}
+
+.about-right p {
+    font-size:  14px;
+    font-family:  'Raleway', sans-serif;
+    line-height: 28px;
+    margin-top:  25px;
+    color:  #1e1e1e;
+}
+
+.about-right p strong {color: #6d6a6a;}
+
+.about-right a {
+    text-decoration:  none;
+    font-size:  20px;
+    color:  #fff;
+    background-color: #ff0000;
+    display:  inline-block;
+    padding: 10px 25px;
+    margin-top:  30px;
+    border: 1px solid #ff0000;
+    transition:  .3s;
+}
+
+.about-right a:hover {
+    background-color: #fff;
+    color:  #ff0000;
+}
+
+
+/*
+==========================================
+    video aria Css
+==========================================
+*/
+
+.vedio-aria {
+    background: url(../img/about-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 290px;
+    z-index: 1;
+    color: #fff;
+	background-attachment: fixed;
+}
+
+
+.vedio-aria:after {
+    position:  absolute;
+    content:  "";
+    width:  100%;
+    height:  100%;
+    background-color:  #000;
+    top:  0;
+    left:  0;
+    opacity: .60;
+    z-index: -1;
+}
+
+.vedio-aria h2 {
+    font-size: 36px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+
+
+.video-icon a {
+    color:  #fff;
+    font-size: 32px;
+    display:  inline-block;
+    width:  100px;
+    height:  100px;
+    transition: .5s;
+    border:  1px solid #fff;
+    border-radius:  10px;
+    padding-top:  24px;
+    text-align: center;
+    margin-top:  40px;
+}
+
+.video-icon a:hover {
+    background-color:  #fff;
+    color:  #000;
+}
+
+
+
+
+/*
+==========================================
+    service aria Css
+==========================================
+*/
+
+.service-box{
+	margin-top: 70px;
+}
+
+
+.service-box i {
+    font-size: 55px;
+    color: #ff0000;
+}
+
+.service-box h3 {
+    font-size: 24px;
+    font-family:   'Raleway', sans-serif;
+    margin:  12px 0;
+    color:  #151515;
+}
+
+.service-box p {
+	font-family:  'Raleway', sans-serif;
+	line-height:  24px;
+	color:  #252525;
+}
+
+
+
+
+
+/*
+==========================================
+    my skil aria Css
+==========================================
+*/
+
+.skil-aria {
+    background-color: #e1e1e1;
+    padding-top: 50px;
+}
+
+
+.my-skil-life h3 {
+    font-size: 24px;
+    font-family:  'Montserrat', sans-serif;
+    font-weight:  600;
+    color:  #151515;
+}
+
+.my-skil-life p {
+    font-weight: 300;
+    color:  #515151;
+    line-height:  26px;
+    margin-top:  20px;
+}
+
+.my-skil-life p:last-child {
+    margin-top:  30px;
+}
+
+
+/*
+==========================================
+    my skil bar aria Css
+==========================================
+*/
+
+.skil-right h3 {
+    font-size: 24px;
+    color: #1b1b1b;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 30px;
+}
+
+
+.skil-right p {
+    font-weight:  300;
+    font-family:  'Raleway', sans-serif;
+    line-height:  24px;
+    margin-top:  20px;
+}
+
+.skil-bar p {
+    margin-top:  0;
+}
+
+
+.skil-bar .skillbar {
+    background-color: #000000;
+    height: 20px;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 100%;
+    padding: 10px 25px;
+    margin-top: 15px;
+    margin-bottom: -10px;
+    display: inline-block;
+    position: relative;
+}
+
+.skil-bar p.skillbar-bar {
+    background-color: #ff0000 !important;
+    height: 10px;
+    top: 5px;
+    position: absolute;
+    border-radius: 30px;
+    left: 4px;
+}
+
+.skil-bar span.skill-bar-percent {
+    color: #fff;
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    font-size: 11px;
+    height: 35px;
+}
+
+h4.skil-bar-title {
+    font-family:  'Raleway', sans-serif;
+    font-size:  16px;
+    color:  #2c2b2b;
+    font-weight:  400;
+    margin-top:  20px;
+    margin-bottom: -5px;
+}
+
+
+
+/*
+==========================================
+    counter aria Css
+==========================================
+*/
+
+
+
+
+
+.counter {
+    background: url(../img/counter.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    min-height: 250px;
+	background-attachment: fixed;
+}
+
+
+.counter:after {
+    position:  absolute;
+    content:  "";
+    width:  100%;
+    height:  100%;
+    background: #000;
+    top:  0;
+    left:  0;
+    opacity:  .60;
+    z-index:  -1;
+}
+
+.counter-box {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.counter-box i {
+    font-size:  25px;
+    width:  55px;
+    height:  55px;
+    border: 2px solid #fff;
+    border-radius:  50px;
+    padding-top: 13px;
+}
+
+span.counter-numbar {
+    font-size: 30px;
+    font-family:  'Raleway', sans-serif;
+    font-weight:  600;
+}
+
+p.counter-name {
+    font-size:  26px;
+    font-weight: 600;
+    margin-top: -5px;
+}
+
+
+/*
+==========================================
+    fortfolio aria Css
+==========================================
+*/
+
+
+.fortfolio-manu {
+    text-align:  center;
+}
+
+.fortfolio-manu button {
+    border:  none;
+    background-color: transparent;
+    color:  #3c3c3c;
+    font-family:  'Montserrat', sans-serif;
+    font-size:  14px;
+    font-weight:  600;
+    text-transform:  uppercase;
+    transition: .3s;
+	outline: none;
+}
+
+.fortfolio-manu button:hover {
+    color: #ff0000;
+}
+
+.fortfolio-item {
+    margin-top: 30px;
+	position: relative;
+}
+.fortfolio-item img {
+    width: 100%;
+}
+
+.fortfolio-manu button.mixitup-control-active {
+    color: red;
+}
+
+
+
+.fortfolio-item:hover .fortfolio-item-hover{
+	visibility: visible;
+	opacity: 1;
+}
+
+
+.fortfolio-item-hover {
+	visibility: hidden;
+	position:  absolute;
+    top:  0;
+    left:  0;
+    color:  #fff;
+    background-color: #ff000070;
+    width:  100%;
+    height:  100%;
+    display:  flex;
+    align-items:  center;
+    justify-content:  center;
+	transition: .5s;
+	opacity: 0;
+}
+
+.fortfolio-item-hover a {
+	font-size:  24px;
+	cursor: pointer;
+	color: #fff;
+}
+
+
+
+
+
+/*
+==========================================
+    team aria Css
+==========================================
+*/
+
+.team{
+	background-color: #e1e1e1;
+}
+
+.team-item {
+    position: relative;
+}
+
+.team-item-hover {
+    position:  absolute;
+    top:  0;
+    left:  0;
+    width:  100%;
+    height:  100%;
+    z-index:  1;
+	transition: 1s;
+}
+
+
+.team-item-hover:after {
+    position:  absolute;
+    content:  "";
+    width: 100%;
+    height:  100%;
+    background-color:  red;
+    top:  0;
+    left:  0;
+    z-index:  -1;
+	opacity:  .6;
+	visibility: hidden;
+	opacity: 0;
+	transition: .5s;
+}
+.team-item:hover .team-item-hover:after{
+	visibility: visible;
+	opacity: .6;
+}
+
+.team-hover-content {
+    background-color:  red;
+    position:  absolute;
+    bottom:  -70px;
+    width:  100%;
+    text-align:  center;
+    color:  #fff;
+    padding:  10px;
+	transition: .3s;
+}
+.team-item:hover .team-hover-content{
+	bottom: 0;
+	
+}
+
+h4.team-name {
+    text-transform:  uppercase;
+}
+
+.team-item-hover ul li {
+    display:  inline;
+}
+
+.team-item-hover ul li
+ a {
+    color:  #fff;
+    font-size:  18px;
+    margin: 0 5px;
+}
+
+.team-item-hover ul {
+    margin-top: 5px;
+}
+
+
+
+/*
+==========================================
+    testimonial aria Css
+==========================================
+*/
+
+
+
+.testimonial {
+    background: url(../img/bg.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.testimonial:after {
+    position:  absolute;
+    content:  "";
+    width:  100%;
+    height:  100%;
+    background-color:  #000;
+    top:  0;
+    left:  0;
+    opacity:  .52;
+    z-index: -1;
+}
+
+.item img {
+    width: auto !important;
+    margin:  0 auto;
+    border-radius:  50px;
+}
+
+
+h4.testimonial-name {
+    text-transform:  uppercase;
+    font-size:  18px;
+    margin:  12px 0;
+	color: #fff;
+}
+
+.item p{
+	color: #fff;
+	font-weight: 300;
+}
+
+@media (max-width: 775px){
+	.testimonial .offset-2{
+		margin: 0;
+	}
+}
+
+
+/*
+==========================================
+    blog aria Css
+==========================================
+*/
+
+@media (max-width:767px){
+	.margin{
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+}
+
+.blog-item {
+	box-shadow: 0px 0px 15px #bfb8b8;
+}
+
+.blog-img img {
+    width:  100%;
+    border-bottom: 8px solid #464646;
+}
+
+.blog-detils {
+    padding: 18px 20px;
+}
+
+h4.blog-title {
+    font-size:  24px;
+    color:  #464646;
+    font-weight:  600;
+    font-family:  'Montserrat', sans-serif;
+}
+
+p.date {
+	font-size: 13px;
+	margin: 15px 0;
+}
+
+p.text {
+	line-height: 24px;
+	color:  #433f3f;
+}
+
+a.button {
+    text-decoration:  none;
+    display:  inline-block;
+    background-color:  #252525;
+    padding: 6px 12px;
+    font-size:  14px;
+    color:  #fff;
+    margin-top:  14px;
+    transition:  .3s;
+    border:  1px solid #252525;
+}
+
+a.button:hover {
+    color:  #252525;
+    background-color:  #fff;
+}
+
+
+
+/*
+==========================================
+    contact aria Css
+==========================================
+*/
+
+
+
+.contact{
+	background: url(../img/contac.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+
+.contact:after{
+    position:  absolute;
+    content:  "";
+    width:  100%;
+    height:  100%;
+    background-color: #000;
+    opacity:  .55;
+    z-index:  -1;
+	top: 0;
+	left: 0;
+}
+
+.contact .section-header h2{
+	color: #fff;
+}
+
+
+.contact input {
+    background:  transparent;
+    border: 1px solid #fff;
+    margin-bottom: 25px;
+    height:  42px;
+}
+
+.contact textarea {
+    background: transparent;
+    border: 1px solid #fff;
+    height:  150px;
+    margin-bottom: 25px;
+    padding-top:  10px;
+}
+
+.contact button {
+    background-color:  #ff0000;
+    border: 0;
+    font-size:  20px;
+    color:  #fff;
+    padding: 10px 32px;
+    transition:  .3s;
+}
+
+.contact button:hover {
+    color:  #ff0000;
+    background-color:  #fff;
+}
+
+.contect input::placeholder{
+	color: #FFFFFF;
+}
+
+
+section.footer {
+    background-color:  #121111;
+    color:  #fff;
+    padding:  30px 0;
+}
+
+.footer-icon ul li {
+    display:  inline-block;
+    margin-right:  15px;
+}
+
+.footer-icon ul li:last-child {
+    margin-right:  0;
+}
+
+.footer-icon ul li a {
+    color:  #fff;
+}
+
+
+
+
+@media screen and (max-width: 1025px) {
+	/* #menu is the original menu */
+	 .main-menu {
+/*		display:none;*/
+	}
+	
+	.slicknav_menu {
+/*		display: block;*/
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	/* #menu is the original menu */
+	 .main-menu {
+/*		display:block;*/
+	}
+	
+	.slicknav_menu {
+/*		display: none;*/
+	}
+}
+
+@media (max-width: 991px){
+	nav.main-menu ul {
+    width: 100%;
+    background: #000000ba;
+}
+	nav.main-menu ul li:hover{
+		background-color: #000;
+		color: #000;
+		
+	}
+	
+	nav.main-menu ul li a{
+		padding: 10px 0;
+	}
+	
+}
+
